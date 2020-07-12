@@ -1,7 +1,7 @@
 ##在用户根目录下直接克隆。
 
 ```
-git clone https://github.com/wuxiwei/vim.git
+git clone https://github.com/ybw139/vim.git
 ```
 ##将vim\\.vimrc文件剪切到用户根目录下
 
