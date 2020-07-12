@@ -112,3 +112,11 @@ let g:tagbar_autofocus=1
 "-----------------------------------------------------------------
 let NERDSpaceDelims=1       " 让注释符与语句之间留一个空格
 let NERDCompactSexyComs=1   " 多行注释时样子更好看"
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示>
+if (has("termguicolors"))
+   set termguicolors
+endif
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set t_Co=256                                                                                                                
+colorscheme tender
+let macvim_skip_colorscheme=1
