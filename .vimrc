@@ -48,7 +48,9 @@ set hlsearch
 "禁止拆行
 set nowrap
 "设置快捷键前最，即<Leader>
-let mapleader=":"
+let mapleader=","
+"设置normal模式快捷键
+inoremap jj <Esc>
 "设置快捷键将选中文本块复制到系统剪贴板
 map <Leader>y "+y
 "设置快捷键将系统剪贴板内容粘帖到vim
@@ -85,9 +87,10 @@ set completeopt=longest,menuone
 "-----------------------------------------------------------------
 "nerdtree插件，目录树。
 "设置默认开启
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 "打开关闭快捷键
-map <F3> :NERDTreeToggle<CR>
+nnoremap <leader>v :NERDTreeFind<cr>
+nnoremap <leader>g :NERDTreeToggle<cr>
 "当只剩下目录树时，自动关闭vim。
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
 "
