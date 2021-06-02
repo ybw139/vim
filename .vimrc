@@ -113,11 +113,14 @@ let g:tagbar_autofocus=1
 "<Leader>cA 在行尾插入 /* */,并且进入插入模式。 这个命令方便写注释。
 "注：count参数可选，无则默认为选中行或当前行
 "-----------------------------------------------------------------
+"ctrlp.vim 文件搜索用
+let g:ctrlp_map = '<leader>p'
+"-----------------------------------------------------------------
+
 let NERDSpaceDelims=1       " 让注释符与语句之间留一个空格
 let NERDCompactSexyComs=1   " 多行注释时样子更好看"
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set t_Co=256                                                                                                                
-"colorscheme tender
 set background=dark
 colorscheme hybrid
 let macvim_skip_colorscheme=1
